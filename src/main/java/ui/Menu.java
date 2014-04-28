@@ -1,6 +1,10 @@
 package ui;
 
 import models.LoggedUser;
+import ui.authors.FrameAuthor;
+import ui.categories.FrameCategory;
+import ui.loans.FrameLoan;
+import ui.publishers.FramePublisher;
 import ui.readers.FrameReader;
 import ui.users.FrameUser;
 
@@ -77,7 +81,7 @@ public class Menu extends javax.swing.JFrame {
     jToolBar1.setBorder(null);
     jToolBar1.setRollover(true);
 
-    btUsers.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    btUsers.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     btUsers.setText("Usuários");
     btUsers.setBorder(null);
     btUsers.setFocusable(false);
@@ -93,7 +97,7 @@ public class Menu extends javax.swing.JFrame {
     });
     jToolBar1.add(btUsers);
 
-    btItems.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    btItems.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     btItems.setText("Itens");
     btItems.setBorder(null);
     btItems.setFocusable(false);
@@ -109,7 +113,7 @@ public class Menu extends javax.swing.JFrame {
     });
     jToolBar1.add(btItems);
 
-    btLoans.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    btLoans.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     btLoans.setText("Empréstimo");
     btLoans.setBorder(null);
     btLoans.setFocusable(false);
@@ -125,7 +129,7 @@ public class Menu extends javax.swing.JFrame {
     });
     jToolBar1.add(btLoans);
 
-    btDevolutions.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    btDevolutions.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     btDevolutions.setText("Devolução");
     btDevolutions.setBorder(null);
     btDevolutions.setFocusable(false);
@@ -141,7 +145,7 @@ public class Menu extends javax.swing.JFrame {
     });
     jToolBar1.add(btDevolutions);
 
-    btReports.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    btReports.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     btReports.setText("Relatórios");
     btReports.setBorder(null);
     btReports.setFocusable(false);
@@ -152,7 +156,7 @@ public class Menu extends javax.swing.JFrame {
     btReports.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
     jToolBar1.add(btReports);
 
-    btReadme.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    btReadme.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     btReadme.setText("Leiame");
     btReadme.setBorder(null);
     btReadme.setFocusable(false);
@@ -163,7 +167,7 @@ public class Menu extends javax.swing.JFrame {
     btReadme.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
     jToolBar1.add(btReadme);
 
-    btAbout.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    btAbout.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     btAbout.setText("Sobre");
     btAbout.setBorder(null);
     btAbout.setFocusable(false);
@@ -174,8 +178,8 @@ public class Menu extends javax.swing.JFrame {
     btAbout.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
     jToolBar1.add(btAbout);
 
-    btExit.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
-    btExit.setText("Sair do Sistema");
+    btExit.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btExit.setText("Sair");
     btExit.setBorder(null);
     btExit.setFocusable(false);
     btExit.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -198,8 +202,10 @@ public class Menu extends javax.swing.JFrame {
 
     jMenuCadastros.setMnemonic('T');
     jMenuCadastros.setText("Cadastros");
+    jMenuCadastros.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenuCadastros.setPreferredSize(new java.awt.Dimension(120, 25));
 
+    jMenuOperador.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenuOperador.setText("Operadores");
     jMenuOperador.setPreferredSize(new java.awt.Dimension(140, 25));
     jMenuOperador.addActionListener(new java.awt.event.ActionListener() {
@@ -212,6 +218,7 @@ public class Menu extends javax.swing.JFrame {
     jSeparator2.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
     jMenuCadastros.add(jSeparator2);
 
+    jMenuCategoria.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenuCategoria.setText("Categorias");
     jMenuCategoria.setPreferredSize(new java.awt.Dimension(140, 25));
     jMenuCategoria.addActionListener(new java.awt.event.ActionListener() {
@@ -221,6 +228,7 @@ public class Menu extends javax.swing.JFrame {
     });
     jMenuCadastros.add(jMenuCategoria);
 
+    jMenuEditora.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenuEditora.setText("Editoras");
     jMenuEditora.setPreferredSize(new java.awt.Dimension(140, 25));
     jMenuEditora.addActionListener(new java.awt.event.ActionListener() {
@@ -230,6 +238,7 @@ public class Menu extends javax.swing.JFrame {
     });
     jMenuCadastros.add(jMenuEditora);
 
+    jMenuAutor.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenuAutor.setText("Autores");
     jMenuAutor.setPreferredSize(new java.awt.Dimension(140, 25));
     jMenuAutor.addActionListener(new java.awt.event.ActionListener() {
@@ -239,6 +248,7 @@ public class Menu extends javax.swing.JFrame {
     });
     jMenuCadastros.add(jMenuAutor);
 
+    jMenuUsuario.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenuUsuario.setText("Usuários");
     jMenuUsuario.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -250,6 +260,7 @@ public class Menu extends javax.swing.JFrame {
     jSeparator1.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
     jMenuCadastros.add(jSeparator1);
 
+    jMenuItem.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenuItem.setText("Items");
     jMenuItem.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -262,8 +273,10 @@ public class Menu extends javax.swing.JFrame {
 
     jMenu2.setMnemonic('E');
     jMenu2.setText("Emissão");
+    jMenu2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenu2.setPreferredSize(new java.awt.Dimension(120, 25));
 
+    menuEmprestimo.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     menuEmprestimo.setMnemonic('A');
     menuEmprestimo.setText("Empréstimo");
     menuEmprestimo.addActionListener(new java.awt.event.ActionListener() {
@@ -277,17 +290,21 @@ public class Menu extends javax.swing.JFrame {
 
     jMenu3.setMnemonic('M');
     jMenu3.setText("Configuração");
+    jMenu3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenu3.setName("jMenu3"); // NOI18N
     jMenu3.setPreferredSize(new java.awt.Dimension(120, 25));
 
+    jMenuItem7.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenuItem7.setText("Ambiente");
     jMenu3.add(jMenuItem7);
 
     jMenuBar1.add(jMenu3);
 
     menuConsultas.setText("Consultas");
+    menuConsultas.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     menuConsultas.setPreferredSize(new java.awt.Dimension(120, 25));
 
+    menuAtrasados.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     menuAtrasados.setText("Atrasados");
     menuAtrasados.setPreferredSize(new java.awt.Dimension(120, 23));
     menuAtrasados.addActionListener(new java.awt.event.ActionListener() {
@@ -297,6 +314,7 @@ public class Menu extends javax.swing.JFrame {
     });
     menuConsultas.add(menuAtrasados);
 
+    menuAniversariantes.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     menuAniversariantes.setText("Aniversariantes");
     menuAniversariantes.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -308,12 +326,15 @@ public class Menu extends javax.swing.JFrame {
     jMenuBar1.add(menuConsultas);
 
     jMenu6.setText("Ajuda");
+    jMenu6.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenu6.setPreferredSize(new java.awt.Dimension(120, 25));
 
+    jMenuItem9.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenuItem9.setText("Sobre ...");
     jMenuItem9.setPreferredSize(new java.awt.Dimension(120, 25));
     jMenu6.add(jMenuItem9);
 
+    jMenuItem10.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
     jMenuItem10.setLabel("Leiame");
     jMenu6.add(jMenuItem10);
 
@@ -335,18 +356,18 @@ public class Menu extends javax.swing.JFrame {
   }//GEN-LAST:event_jMenuOperadorActionPerformed
 
   private void jMenuAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuAutorActionPerformed
-    //  FrameAuthor frameAuthor = new FrameAuthor(this, true);
-    //  frameAuthor.setVisible(true);
+    FrameAuthor frameAuthor = new FrameAuthor(this, true);
+    frameAuthor.setVisible(true);
   }//GEN-LAST:event_jMenuAutorActionPerformed
 
   private void jMenuCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuCategoriaActionPerformed
-    //  FrameCategory frameCategory = new FrameCategory(this, true);
-    //  frameCategory.setVisible(true);
+    FrameCategory frameCategory = new FrameCategory(this, true);
+    frameCategory.setVisible(true);
   }//GEN-LAST:event_jMenuCategoriaActionPerformed
 
   private void jMenuEditoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuEditoraActionPerformed
-    //  FramePublisher framePublisher = new FramePublisher(this, true);
-    //  framePublisher.setVisible(true);
+    FramePublisher framePublisher = new FramePublisher(this, true);
+    framePublisher.setVisible(true);
   }//GEN-LAST:event_jMenuEditoraActionPerformed
 
   private void jMenuUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuUsuarioActionPerformed
@@ -368,8 +389,8 @@ public class Menu extends javax.swing.JFrame {
   }//GEN-LAST:event_btItemsActionPerformed
 
   private void menuEmprestimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuEmprestimoActionPerformed
-    //  FrameLoan frameLoan = new FrameLoan(this, true);
-    //  frameLoan.setVisible(true);
+    FrameLoan frameLoan = new FrameLoan(this, true);
+    frameLoan.setVisible(true);
   }//GEN-LAST:event_menuEmprestimoActionPerformed
 
   private void btLoansActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLoansActionPerformed

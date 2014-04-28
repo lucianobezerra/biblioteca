@@ -13,6 +13,9 @@
           <Properties>
             <Property name="mnemonic" type="int" value="84"/>
             <Property name="text" type="java.lang.String" value="Cadastros"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Monospaced" size="12" style="0"/>
+            </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[120, 25]"/>
             </Property>
@@ -20,6 +23,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuOperador">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Operadores"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[140, 25]"/>
@@ -40,6 +46,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuCategoria">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Categorias"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[140, 25]"/>
@@ -51,6 +60,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuEditora">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Editoras"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[140, 25]"/>
@@ -62,6 +74,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuAutor">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Autores"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[140, 25]"/>
@@ -73,6 +88,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuUsuario">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Usu&#xe1;rios"/>
               </Properties>
               <Events>
@@ -90,6 +108,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Items"/>
               </Properties>
               <Events>
@@ -102,6 +123,9 @@
           <Properties>
             <Property name="mnemonic" type="int" value="69"/>
             <Property name="text" type="java.lang.String" value="Emiss&#xe3;o"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Monospaced" size="12" style="0"/>
+            </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[120, 25]"/>
             </Property>
@@ -109,6 +133,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="menuEmprestimo">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
                 <Property name="mnemonic" type="int" value="65"/>
                 <Property name="text" type="java.lang.String" value="Empr&#xe9;stimo"/>
               </Properties>
@@ -122,6 +149,9 @@
           <Properties>
             <Property name="mnemonic" type="int" value="77"/>
             <Property name="text" type="java.lang.String" value="Configura&#xe7;&#xe3;o"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Monospaced" size="12" style="0"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="jMenu3" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[120, 25]"/>
@@ -130,6 +160,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Ambiente"/>
               </Properties>
             </MenuItem>
@@ -138,6 +171,9 @@
         <Menu class="javax.swing.JMenu" name="menuConsultas">
           <Properties>
             <Property name="text" type="java.lang.String" value="Consultas"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Monospaced" size="12" style="0"/>
+            </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[120, 25]"/>
             </Property>
@@ -145,6 +181,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="menuAtrasados">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Atrasados"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[120, 23]"/>
@@ -156,6 +195,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="menuAniversariantes">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Aniversariantes"/>
               </Properties>
               <Events>
@@ -167,6 +209,9 @@
         <Menu class="javax.swing.JMenu" name="jMenu6">
           <Properties>
             <Property name="text" type="java.lang.String" value="Ajuda"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Monospaced" size="12" style="0"/>
+            </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[120, 25]"/>
             </Property>
@@ -174,6 +219,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem9">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Sobre ..."/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[120, 25]"/>
@@ -182,6 +230,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem10">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
                 <Property name="label" type="java.lang.String" value="Leiame"/>
               </Properties>
             </MenuItem>
@@ -286,7 +337,7 @@
             <Component class="javax.swing.JButton" name="btUsers">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Ubuntu" size="12" style="0"/>
+                  <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Usu&#xe1;rios"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -315,7 +366,7 @@
             <Component class="javax.swing.JButton" name="btItems">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Ubuntu" size="12" style="0"/>
+                  <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Itens"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -344,7 +395,7 @@
             <Component class="javax.swing.JButton" name="btLoans">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Ubuntu" size="12" style="0"/>
+                  <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Empr&#xe9;stimo"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -373,7 +424,7 @@
             <Component class="javax.swing.JButton" name="btDevolutions">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Ubuntu" size="12" style="0"/>
+                  <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Devolu&#xe7;&#xe3;o"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -402,7 +453,7 @@
             <Component class="javax.swing.JButton" name="btReports">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Ubuntu" size="12" style="0"/>
+                  <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Relat&#xf3;rios"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -428,7 +479,7 @@
             <Component class="javax.swing.JButton" name="btReadme">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Ubuntu" size="12" style="0"/>
+                  <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Leiame"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -454,7 +505,7 @@
             <Component class="javax.swing.JButton" name="btAbout">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Ubuntu" size="12" style="0"/>
+                  <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Sobre"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -480,9 +531,9 @@
             <Component class="javax.swing.JButton" name="btExit">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Ubuntu" size="12" style="0"/>
+                  <Font name="Monospaced" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Sair do Sistema"/>
+                <Property name="text" type="java.lang.String" value="Sair"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
