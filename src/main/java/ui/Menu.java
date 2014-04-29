@@ -3,6 +3,8 @@ package ui;
 import models.LoggedUser;
 import ui.authors.FrameAuthor;
 import ui.categories.FrameCategory;
+import ui.items.FrameDevolution;
+import ui.items.FrameItem;
 import ui.loans.FrameLoan;
 import ui.publishers.FramePublisher;
 import ui.readers.FrameReader;
@@ -380,8 +382,8 @@ public class Menu extends javax.swing.JFrame {
   }//GEN-LAST:event_btUsersActionPerformed
 
   private void jMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemActionPerformed
-    //  FrameItem frameItem = new FrameItem(this, true);
-    //  frameItem.setVisible(true);
+    FrameItem frameItem = new FrameItem(this, true);
+    frameItem.setVisible(true);
   }//GEN-LAST:event_jMenuItemActionPerformed
 
   private void btItemsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btItemsActionPerformed
@@ -398,8 +400,8 @@ public class Menu extends javax.swing.JFrame {
   }//GEN-LAST:event_btLoansActionPerformed
 
   private void btDevolutionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDevolutionsActionPerformed
-    //  FrameDevolution frameDevolution = new FrameDevolution(this, true);
-    //  frameDevolution.setVisible(true);
+    FrameDevolution frameDevolution = new FrameDevolution(this, true);
+    frameDevolution.setVisible(true);
   }//GEN-LAST:event_btDevolutionsActionPerformed
 
   private void menuAtrasadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuAtrasadosActionPerformed
