@@ -5,6 +5,8 @@ import ui.authors.FrameAuthor;
 import ui.categories.FrameCategory;
 import ui.items.FrameDevolution;
 import ui.items.FrameItem;
+import ui.readers.FrameFindBirth;
+import ui.loans.FrameFindDelayed;
 import ui.loans.FrameLoan;
 import ui.publishers.FramePublisher;
 import ui.readers.FrameReader;
@@ -405,13 +407,13 @@ public class Menu extends javax.swing.JFrame {
   }//GEN-LAST:event_btDevolutionsActionPerformed
 
   private void menuAtrasadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuAtrasadosActionPerformed
-    //  FrameFindDelayed frameDelayed = new FrameFindDelayed(this, true);
-    //  frameDelayed.setVisible(true);
+    FrameFindDelayed frameDelayed = new FrameFindDelayed(this, true);
+    frameDelayed.setVisible(true);
   }//GEN-LAST:event_menuAtrasadosActionPerformed
 
   private void menuAniversariantesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuAniversariantesActionPerformed
-    //  FrameFindBirth frameFindBirth = new FrameFindBirth(this, true);
-    //  frameFindBirth.setVisible(true);
+    FrameFindBirth frameFindBirth = new FrameFindBirth(this, true);
+    frameFindBirth.setVisible(true);
   }//GEN-LAST:event_menuAniversariantesActionPerformed
 
   public static void main(String args[]) {
