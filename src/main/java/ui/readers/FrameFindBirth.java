@@ -27,12 +27,11 @@ public class FrameFindBirth extends javax.swing.JDialog {
     bgAuthors = new javax.swing.ButtonGroup();
     jScrollPane1 = new javax.swing.JScrollPane();
     gridBirth = new javax.swing.JTable();
-    btEmail = new javax.swing.JButton();
-    btExit = new javax.swing.JButton();
     jPanel1 = new javax.swing.JPanel();
     jLabel1 = new javax.swing.JLabel();
-    btFiltrar = new javax.swing.JButton();
     comboMes = new javax.swing.JComboBox();
+    btEmail = new javax.swing.JButton();
+    btExit = new javax.swing.JButton();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     setTitle("Localizar Autor");
@@ -83,7 +82,24 @@ public class FrameFindBirth extends javax.swing.JDialog {
       gridBirth.getColumnModel().getColumn(4).setPreferredWidth(25);
     }
 
-    getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 280));
+    getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 275));
+
+    jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Opções de Filtro", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Ubuntu", 0, 12))); // NOI18N
+    jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    jLabel1.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+    jLabel1.setText("Escolha um Mês:");
+    jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 18, 100, 30));
+
+    comboMes.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    comboMes.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " --- Selecione um Mês ---", "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" }));
+    comboMes.addItemListener(new java.awt.event.ItemListener() {
+      public void itemStateChanged(java.awt.event.ItemEvent evt) {
+        comboMesItemStateChanged(evt);
+      }
+    });
+    jPanel1.add(comboMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 18, 200, 30));
 
     btEmail.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
     btEmail.setText("Email");
@@ -92,7 +108,7 @@ public class FrameFindBirth extends javax.swing.JDialog {
         btEmailActionPerformed(evt);
       }
     });
-    getContentPane().add(btEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 305, 90, 28));
+    jPanel1.add(btEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 18, 90, 30));
 
     btExit.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
     btExit.setText("Sair");
@@ -101,30 +117,9 @@ public class FrameFindBirth extends javax.swing.JDialog {
         btExitActionPerformed(evt);
       }
     });
-    getContentPane().add(btExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 305, 90, 28));
+    jPanel1.add(btExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 18, 90, 30));
 
-    jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Opções de Filtro", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Ubuntu", 0, 12))); // NOI18N
-    jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-    jLabel1.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
-    jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-    jLabel1.setText("Escolha um Mês:");
-    jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 18, 100, 25));
-
-    btFiltrar.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
-    btFiltrar.setText("Filtrar");
-    btFiltrar.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        btFiltrarActionPerformed(evt);
-      }
-    });
-    jPanel1.add(btFiltrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 18, 80, 25));
-
-    comboMes.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
-    comboMes.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " --- Selecione um Mês ---", "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" }));
-    jPanel1.add(comboMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 15, 200, 25));
-
-    getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 450, 50));
+    getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 650, 60));
 
     setSize(new java.awt.Dimension(662, 370));
     setLocationRelativeTo(null);
@@ -138,9 +133,9 @@ public class FrameFindBirth extends javax.swing.JDialog {
     preparaEmail(gridBirth.getSelectedRow());
   }//GEN-LAST:event_btEmailActionPerformed
 
-  private void btFiltrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btFiltrarActionPerformed
+  private void comboMesItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_comboMesItemStateChanged
     preencheGrid(comboMes.getSelectedIndex());
-  }//GEN-LAST:event_btFiltrarActionPerformed
+  }//GEN-LAST:event_comboMesItemStateChanged
 
   public static void main(String args[]) {
     /* Set the Nimbus look and feel */
@@ -186,7 +181,6 @@ public class FrameFindBirth extends javax.swing.JDialog {
   private javax.swing.ButtonGroup bgAuthors;
   private javax.swing.JButton btEmail;
   private javax.swing.JButton btExit;
-  private javax.swing.JButton btFiltrar;
   private javax.swing.JComboBox comboMes;
   private javax.swing.JTable gridBirth;
   private javax.swing.JLabel jLabel1;
@@ -231,7 +225,6 @@ public class FrameFindBirth extends javax.swing.JDialog {
   }
 
   private void setIcons() {
-    btFiltrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif")));
     btEmail.setIcon(  new javax.swing.ImageIcon(getClass().getResource("/images/email.png")));
     btExit.setIcon(   new javax.swing.ImageIcon(getClass().getResource("/images/exit.png")));
   }

@@ -59,7 +59,6 @@ public class Login extends javax.swing.JDialog {
     jPanel2.add(btAcesso, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 120, 28));
 
     editSenha.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    editSenha.setText("gecx2014");
     editSenha.addKeyListener(new java.awt.event.KeyAdapter() {
       public void keyPressed(java.awt.event.KeyEvent evt) {
         editSenhaKeyPressed(evt);
@@ -73,7 +72,6 @@ public class Login extends javax.swing.JDialog {
     jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 191, -1, -1));
 
     editUser.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    editUser.setText("luciano");
     editUser.addKeyListener(new java.awt.event.KeyAdapter() {
       public void keyPressed(java.awt.event.KeyEvent evt) {
         editUserKeyPressed(evt);

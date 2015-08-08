@@ -710,6 +710,7 @@ public class FrameItem extends javax.swing.JDialog {
               "user_id",      idOperador,
               "pages",        pages,
               "existing",     existing,
+              "available",    existing,
               "active",       active
       );
       if(item.saveIt()){
