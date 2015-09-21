@@ -19,7 +19,7 @@ public class FrameFindReader extends javax.swing.JDialog {
   public FrameFindReader(javax.swing.JDialog parent, boolean modal) {
     super(parent, modal);
     initComponents();
-    setIcon();
+    //setIcon();
     formataGrid(gridReader);
     model = (DefaultTableModel) gridReader.getModel();
     this.parent = parent;
@@ -112,6 +112,7 @@ public class FrameFindReader extends javax.swing.JDialog {
     jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
     btPesquisar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif"))); // NOI18N
     btPesquisar.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         btPesquisarActionPerformed(evt);
@@ -128,6 +129,7 @@ public class FrameFindReader extends javax.swing.JDialog {
     jPanel2.add(txtPesquisa, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 15, 310, 28));
 
     btClose.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png"))); // NOI18N
     btClose.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         btCloseActionPerformed(evt);

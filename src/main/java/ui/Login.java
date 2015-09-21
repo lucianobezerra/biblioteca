@@ -1,6 +1,7 @@
 package ui;
 
 import java.awt.event.KeyEvent;
+import javax.swing.ImageIcon;
 import models.User;
 import models.LoggedUser;
 import util.Criptografia;
@@ -150,7 +151,9 @@ public class Login extends javax.swing.JDialog {
   // End of variables declaration//GEN-END:variables
 
   private void setImages() {
-    jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lock.png")));
-    btAcesso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/login.png")));
+    ImageIcon lock = new ImageIcon("images/lock.png");
+    ImageIcon login = new ImageIcon("images/login.png");
+    jLabel3.setIcon(lock);
+    btAcesso.setIcon(login);
   }
 }

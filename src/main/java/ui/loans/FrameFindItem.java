@@ -19,7 +19,7 @@ public class FrameFindItem extends javax.swing.JDialog {
   public FrameFindItem(javax.swing.JDialog parent, boolean modal) {
     super(parent, modal);
     initComponents();
-    setIcon();
+    //setIcon();
     model = (DefaultTableModel) gridItem.getModel();
     formataGrid(gridItem);
     this.parent = parent;
@@ -115,6 +115,7 @@ public class FrameFindItem extends javax.swing.JDialog {
     jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
     btFind.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btFind.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif"))); // NOI18N
     btFind.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         btFindActionPerformed(evt);
@@ -131,6 +132,7 @@ public class FrameFindItem extends javax.swing.JDialog {
     jPanel2.add(txtPesquisa, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 15, 350, 28));
 
     btClose.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png"))); // NOI18N
     btClose.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         btCloseActionPerformed(evt);

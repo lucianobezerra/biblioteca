@@ -1,9 +1,12 @@
 package ui.loans;
 
 import java.awt.Font;
+import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JTable;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
@@ -22,7 +25,7 @@ public class FrameLoan extends javax.swing.JDialog {
   public FrameLoan(java.awt.Frame parent, boolean modal) {
     super(parent, modal);
     initComponents();
-    setIcon();
+    //setIcon();
     model = (DefaultTableModel) gridLoan.getModel();
     formataGrid(gridLoan);
     preencheGrid();
@@ -64,7 +67,7 @@ public class FrameLoan extends javax.swing.JDialog {
     lblMediaType = new javax.swing.JLabel();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-    setTitle("Movimentação de Itens");
+    setTitle("Movimentação de Empréstimos");
     setResizable(false);
     getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -198,6 +201,7 @@ public class FrameLoan extends javax.swing.JDialog {
     pnActions.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
     btNovo.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/new.png"))); // NOI18N
     btNovo.setText("Novo");
     btNovo.setToolTipText("Novo Registro");
     btNovo.addActionListener(new java.awt.event.ActionListener() {
@@ -208,6 +212,7 @@ public class FrameLoan extends javax.swing.JDialog {
     pnActions.add(btNovo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 28));
 
     btAlterar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/edit.png"))); // NOI18N
     btAlterar.setText("Alterar");
     btAlterar.setToolTipText("Alterar Registro");
     btAlterar.setEnabled(false);
@@ -219,6 +224,7 @@ public class FrameLoan extends javax.swing.JDialog {
     pnActions.add(btAlterar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 100, 28));
 
     btSalvar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save.png"))); // NOI18N
     btSalvar.setText("Salvar");
     btSalvar.setToolTipText("Salvar Registro");
     btSalvar.setEnabled(false);
@@ -230,6 +236,7 @@ public class FrameLoan extends javax.swing.JDialog {
     pnActions.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(215, 0, 100, 28));
 
     btCancelar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cancelar.png"))); // NOI18N
     btCancelar.setText("Cancelar");
     btCancelar.setToolTipText("Cancelar Edição");
     btCancelar.setEnabled(false);
@@ -241,6 +248,7 @@ public class FrameLoan extends javax.swing.JDialog {
     pnActions.add(btCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 100, 28));
 
     btExcluir.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/delete.png"))); // NOI18N
     btExcluir.setText("Excluir");
     btExcluir.setToolTipText("Excluir Registro");
     btExcluir.setEnabled(false);
@@ -252,6 +260,7 @@ public class FrameLoan extends javax.swing.JDialog {
     pnActions.add(btExcluir, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 0, 100, 28));
 
     btSair.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png"))); // NOI18N
     btSair.setText("Sair");
     btSair.setToolTipText("Sair");
     btSair.addActionListener(new java.awt.event.ActionListener() {
@@ -281,7 +290,16 @@ public class FrameLoan extends javax.swing.JDialog {
   }//GEN-LAST:event_btAlterarActionPerformed
 
   private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
-    preparaSalvar(lblCodigo.getText(), txtReader.getText(), txtItem.getText(), txtPrevision.getText());
+    try {
+      Integer id = lblCodigo.getText() == null ? null : Integer.valueOf(lblCodigo.getText());
+      Integer reader = Integer.valueOf(txtReader.getText());
+      Integer item = Integer.valueOf(txtItem.getText());
+      SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+      java.sql.Date dev = new java.sql.Date(sdf.parse(txtPrevision.getText()).getTime());
+      preparaSalvar(id, reader, item, dev);
+    } catch (ParseException ex) {
+      Logger.getLogger(FrameLoan.class.getName()).log(Level.SEVERE, null, ex);
+    }
   }//GEN-LAST:event_btSalvarActionPerformed
 
   private void btCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCancelarActionPerformed
@@ -370,13 +388,13 @@ public class FrameLoan extends javax.swing.JDialog {
     Loan loan = Loan.findById(id);
     Reader reader = loan.parent(Reader.class);
     Item item = loan.parent(Item.class);
-    
+
     if (loan != null) {
       lblCodigo.setText(String.format("%04d", loan.getId()));
       txtReader.setText(String.format("%04d", reader.getInteger("id")));
       lblReader.setText(reader.getString("name"));
       txtItem.setText(String.format("%04d", item.getInteger("id")));
-      lblItem.setText(item.getString("description"));
+      lblItem.setText(item.getString("title"));
       txtPrevision.setText(Funcoes.dataString(loan.getDate("prevision")));
       Funcoes.habilitaBotoes(btAlterar, btExcluir);
     }
@@ -444,30 +462,33 @@ public class FrameLoan extends javax.swing.JDialog {
   }
 
   private void preparaExcluir(String id) {
-    Loan loan = Loan.findById(Integer.valueOf(id));
-    try{
-      loan.delete();
-      trataComponentes("preparaExcluir");
-    }catch(Exception e){
-      Message.information(this, e.getLocalizedMessage());
+    if (id != null) {
+      Loan loan = Loan.findById(Integer.valueOf(id));
+      try {
+        loan.delete();
+        trataComponentes("preparaExcluir");
+      } catch (Exception e) {
+        Message.information(this, e.getLocalizedMessage());
+      }
+    }else{
+      Message.error(this, "Nenhum registro selecionado");
     }
-    
   }
 
-  private void preparaSalvar(String id, String reader_id, String item_id, String devolution) {
+  private void preparaSalvar(Integer id, Integer reader_id, Integer item_id, Date devolution) {
     Loan loan = new Loan();
-    try{
-      Item item = Item.findById(Integer.valueOf(item_id));
+    try {
+      Item item = Item.findById(item_id);
       Integer user = LoggedUser.getInstance().getId();
-      if (item.getInteger("available") > 0) {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        java.sql.Date data = new java.sql.Date(sdf.parse(devolution).getTime());
+      loan.set("id", id, "reader_id", reader_id, "item_id", item_id, "prevision", devolution, "user_id", user);
 
-        loan.set("id", id, "reader_id", reader_id, "item_id", item_id, "prevision", data, "user_id", user);
+      if (checkAvailable(id, item)) {
         if (loan.saveIt()) {
           lblCodigo.setText(String.format("%05d", loan.getId()));
-          item.set("available", item.getInteger("available") - 1);
-          item.save();
+          if (id == null) {
+            item.set("available", item.getInteger("available") - 1);
+            item.save();
+          }
           preencheGrid();
           trataComponentes("preparaSalvar");
         }
@@ -475,9 +496,9 @@ public class FrameLoan extends javax.swing.JDialog {
         Funcoes.informacao("Item sem saldo disponível, favor verificar.");
         btCancelar.requestFocusInWindow();
       }
-    }catch(ValidationException e){
+    } catch (ValidationException e) {
       Message.validation(this, loan.errors());
-    }catch(NumberFormatException | ParseException e){
+    } catch (NumberFormatException e) {
       Message.exception(this, "Erro: ", e.getLocalizedMessage());
     }
   }
@@ -507,7 +528,7 @@ public class FrameLoan extends javax.swing.JDialog {
     List<Loan> loans = Loan.find("devolution is null");
     for (Loan loan : loans) {
       Reader reader = loan.parent(Reader.class);
-      Item   item   = loan.parent(Item.class);
+      Item item = loan.parent(Item.class);
       model.addRow(new Object[]{String.format("%04d", loan.getId()), reader.getString("name"), item.getString("title"), Funcoes.dataString(loan.getDate("prevision"))});
     }
     gridLoan.setModel(model);
@@ -531,13 +552,23 @@ public class FrameLoan extends javax.swing.JDialog {
   }
 
   private void setIcon() {
-    btNovo.setIcon(     new javax.swing.ImageIcon(getClass().getResource("/images/new.png")));
-    btAlterar.setIcon(  new javax.swing.ImageIcon(getClass().getResource("/images/edit.png")));
-    btSalvar.setIcon(   new javax.swing.ImageIcon(getClass().getResource("/images/save.png")));
-    btCancelar.setIcon( new javax.swing.ImageIcon(getClass().getResource("/images/cancelar.png")));
-    btExcluir.setIcon(  new javax.swing.ImageIcon(getClass().getResource("/images/delete.png")));
-    btFindItem.setIcon( new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif")));
-    btFindReader.setIcon( new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif")));
-    btSair.setIcon(     new javax.swing.ImageIcon(getClass().getResource("/images/exit.png")));
+    btNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/new.png")));
+    btAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/edit.png")));
+    btSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save.png")));
+    btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cancelar.png")));
+    btExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/delete.png")));
+    btFindItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif")));
+    btFindReader.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif")));
+    btSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png")));
+  }
+
+  private boolean checkAvailable(Integer id, Item item) {
+    boolean result;
+    if (id == null) {
+      result = item.getInteger("available") > 0;
+    } else {
+      result = true;
+    }
+    return result;
   }
 }

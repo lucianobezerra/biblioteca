@@ -11,12 +11,6 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
   <build>
-     <resources>
-        <resource>
-          <directory>src/main/resources/images</directory>
-          <targetPath>${project.build.outputDirectory}/images</targetPath>
-        </resource>
-     </resources>
      <plugins>
       <plugin>
         <groupId>org.javalite</groupId>
@@ -40,7 +34,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>com.gecx.biblioteca.App</mainClass>
+              <mainClass>gecx.App</mainClass>
             </manifest>
           </archive>
         </configuration>

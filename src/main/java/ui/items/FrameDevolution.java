@@ -58,6 +58,7 @@ public class FrameDevolution extends javax.swing.JDialog {
     jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
     btDevolver.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    btDevolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/devolution.png"))); // NOI18N
     btDevolver.setText("Devolver");
     btDevolver.setToolTipText("Salvar Registro");
     btDevolver.setEnabled(false);
@@ -69,6 +70,7 @@ public class FrameDevolution extends javax.swing.JDialog {
     jPanel5.add(btDevolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 288, 100, 30));
 
     btSair.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    btSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png"))); // NOI18N
     btSair.setText("Sair");
     btSair.setToolTipText("Sair");
     btSair.addActionListener(new java.awt.event.ActionListener() {

@@ -18,7 +18,7 @@ public class FrameFindDelayed extends javax.swing.JDialog {
 
   public FrameFindDelayed(java.awt.Frame parent, boolean modal) {
     initComponents();
-    setIcons();
+    //setIcons();
     formataGrid(gridLoan);
     model = (DefaultTableModel) gridLoan.getModel();
     preencheGrid();
@@ -87,6 +87,7 @@ public class FrameFindDelayed extends javax.swing.JDialog {
     getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 300));
 
     btEmail.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btEmail.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/email.png"))); // NOI18N
     btEmail.setText("Email");
     btEmail.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,6 +97,7 @@ public class FrameFindDelayed extends javax.swing.JDialog {
     getContentPane().add(btEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 305, 120, 28));
 
     btSair.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png"))); // NOI18N
     btSair.setText("Sair");
     btSair.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

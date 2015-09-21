@@ -102,6 +102,7 @@ public class FrameFindBirth extends javax.swing.JDialog {
     jPanel1.add(comboMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 18, 200, 30));
 
     btEmail.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    btEmail.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/email.png"))); // NOI18N
     btEmail.setText("Email");
     btEmail.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,6 +112,7 @@ public class FrameFindBirth extends javax.swing.JDialog {
     jPanel1.add(btEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 18, 90, 30));
 
     btExit.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+    btExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/sair.png"))); // NOI18N
     btExit.setText("Sair");
     btExit.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,7 +192,7 @@ public class FrameFindBirth extends javax.swing.JDialog {
 
   private void preencheGrid(int mes) {
     Funcoes.removeLinha(model);
-    List<Reader> readers = Reader.getBirthdays(mes);
+    List<Reader> readers = Reader.where("month(birth) = ?", mes).orderBy("day(birth)"); // .getBirthdays(mes);
     for (Reader reader : readers) {
       String birth = Funcoes.dataString(reader.getDate("birth"));
       model.addRow(new Object[]{

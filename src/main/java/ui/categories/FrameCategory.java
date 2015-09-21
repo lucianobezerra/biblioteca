@@ -57,7 +57,7 @@ public class FrameCategory extends javax.swing.JDialog {
     btSair = new javax.swing.JButton();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-    setTitle("Cadastro do Autor");
+    setTitle("Cadastro do Categorias");
     setResizable(false);
     getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -85,6 +85,7 @@ public class FrameCategory extends javax.swing.JDialog {
     jPanel2.add(checkSomenteAtivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 16, 80, 28));
 
     btPesquisar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif"))); // NOI18N
     btPesquisar.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         btPesquisarActionPerformed(evt);
@@ -184,6 +185,7 @@ public class FrameCategory extends javax.swing.JDialog {
     jPanel4.add(checkAtivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 80, 28));
 
     btNovo.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/new.png"))); // NOI18N
     btNovo.setToolTipText("Novo Registro");
     btNovo.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -193,6 +195,7 @@ public class FrameCategory extends javax.swing.JDialog {
     jPanel4.add(btNovo, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 240, 50, 30));
 
     btAlterar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/edit.png"))); // NOI18N
     btAlterar.setToolTipText("Alterar Registro");
     btAlterar.setEnabled(false);
     btAlterar.addActionListener(new java.awt.event.ActionListener() {
@@ -203,6 +206,7 @@ public class FrameCategory extends javax.swing.JDialog {
     jPanel4.add(btAlterar, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 240, 50, 30));
 
     btSalvar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save.png"))); // NOI18N
     btSalvar.setToolTipText("Salvar Registro");
     btSalvar.setEnabled(false);
     btSalvar.addActionListener(new java.awt.event.ActionListener() {
@@ -213,6 +217,7 @@ public class FrameCategory extends javax.swing.JDialog {
     jPanel4.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 50, 30));
 
     btCancelar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cancelar.png"))); // NOI18N
     btCancelar.setToolTipText("Cancelar Edição");
     btCancelar.setEnabled(false);
     btCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -223,6 +228,7 @@ public class FrameCategory extends javax.swing.JDialog {
     jPanel4.add(btCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 240, 50, 30));
 
     btExcluir.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/delete.png"))); // NOI18N
     btExcluir.setToolTipText("Excluir Registro");
     btExcluir.setEnabled(false);
     btExcluir.addActionListener(new java.awt.event.ActionListener() {
@@ -233,6 +239,7 @@ public class FrameCategory extends javax.swing.JDialog {
     jPanel4.add(btExcluir, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 50, 30));
 
     btSair.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png"))); // NOI18N
     btSair.setToolTipText("Sair");
     btSair.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

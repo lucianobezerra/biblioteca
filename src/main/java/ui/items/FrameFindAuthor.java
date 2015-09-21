@@ -109,6 +109,7 @@ public class FrameFindAuthor extends javax.swing.JDialog {
     jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
     btFind.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btFind.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif"))); // NOI18N
     btFind.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         btFindActionPerformed(evt);

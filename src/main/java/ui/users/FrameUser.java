@@ -85,6 +85,7 @@ public class FrameUser extends javax.swing.JDialog {
     jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
     btPesquisar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif"))); // NOI18N
     btPesquisar.setText("Pesquisar");
     btPesquisar.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -243,6 +244,7 @@ public class FrameUser extends javax.swing.JDialog {
     jPanel3.add(txtSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 190, 28));
 
     btNovo.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/new.png"))); // NOI18N
     btNovo.setText("Novo");
     btNovo.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -252,6 +254,7 @@ public class FrameUser extends javax.swing.JDialog {
     jPanel3.add(btNovo, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 270, 100, 28));
 
     btAlterar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/edit.png"))); // NOI18N
     btAlterar.setText("Alterar");
     btAlterar.setEnabled(false);
     btAlterar.addActionListener(new java.awt.event.ActionListener() {
@@ -262,6 +265,7 @@ public class FrameUser extends javax.swing.JDialog {
     jPanel3.add(btAlterar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, 100, 28));
 
     btSalvar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save.png"))); // NOI18N
     btSalvar.setText("Salvar");
     btSalvar.setEnabled(false);
     btSalvar.addActionListener(new java.awt.event.ActionListener() {
@@ -272,6 +276,7 @@ public class FrameUser extends javax.swing.JDialog {
     jPanel3.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(215, 270, 100, 28));
 
     btCancelar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cancelar.png"))); // NOI18N
     btCancelar.setText("Cancelar");
     btCancelar.setEnabled(false);
     btCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -282,6 +287,7 @@ public class FrameUser extends javax.swing.JDialog {
     jPanel3.add(btCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 100, 28));
 
     btExcluir.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/delete.png"))); // NOI18N
     btExcluir.setText("Excluir");
     btExcluir.setEnabled(false);
     btExcluir.addActionListener(new java.awt.event.ActionListener() {
@@ -292,6 +298,7 @@ public class FrameUser extends javax.swing.JDialog {
     jPanel3.add(btExcluir, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 270, 100, 28));
 
     jButton7.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png"))); // NOI18N
     jButton7.setText("Sair");
     jButton7.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

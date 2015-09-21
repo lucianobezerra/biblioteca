@@ -29,21 +29,13 @@ public class Menu extends javax.swing.JFrame {
     jLabel1 = new javax.swing.JLabel();
     jToolBar1 = new javax.swing.JToolBar();
     btUsers = new javax.swing.JButton();
-    btUsers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/usuarios.png")));
     btItems = new javax.swing.JButton();
-    btItems.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/items.png")));
     btLoans = new javax.swing.JButton();
-    btLoans.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loans.png")));
     btDevolutions = new javax.swing.JButton();
-    btDevolutions.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/devolution.png")));
     btReports = new javax.swing.JButton();
-    btReports.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reports.gif")));
     btReadme = new javax.swing.JButton();
-    btReadme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/readme.png")));
     btAbout = new javax.swing.JButton();
-    btAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/about.png")));
     btExit = new javax.swing.JButton();
-    btExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png")));
     jMenuBar1 = new javax.swing.JMenuBar();
     jMenuCadastros = new javax.swing.JMenu();
     jMenuOperador = new javax.swing.JMenuItem();
@@ -86,6 +78,7 @@ public class Menu extends javax.swing.JFrame {
     jToolBar1.setRollover(true);
 
     btUsers.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btUsers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/usuarios.png"))); // NOI18N
     btUsers.setText("Usuários");
     btUsers.setBorder(null);
     btUsers.setFocusable(false);
@@ -102,6 +95,7 @@ public class Menu extends javax.swing.JFrame {
     jToolBar1.add(btUsers);
 
     btItems.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btItems.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loans.png"))); // NOI18N
     btItems.setText("Itens");
     btItems.setBorder(null);
     btItems.setFocusable(false);
@@ -118,6 +112,7 @@ public class Menu extends javax.swing.JFrame {
     jToolBar1.add(btItems);
 
     btLoans.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btLoans.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loans.png"))); // NOI18N
     btLoans.setText("Empréstimo");
     btLoans.setBorder(null);
     btLoans.setFocusable(false);
@@ -134,6 +129,7 @@ public class Menu extends javax.swing.JFrame {
     jToolBar1.add(btLoans);
 
     btDevolutions.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btDevolutions.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/devolution.png"))); // NOI18N
     btDevolutions.setText("Devolução");
     btDevolutions.setBorder(null);
     btDevolutions.setFocusable(false);
@@ -150,6 +146,7 @@ public class Menu extends javax.swing.JFrame {
     jToolBar1.add(btDevolutions);
 
     btReports.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btReports.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
     btReports.setText("Relatórios");
     btReports.setBorder(null);
     btReports.setFocusable(false);
@@ -161,6 +158,7 @@ public class Menu extends javax.swing.JFrame {
     jToolBar1.add(btReports);
 
     btReadme.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btReadme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/readme.png"))); // NOI18N
     btReadme.setText("Leiame");
     btReadme.setBorder(null);
     btReadme.setFocusable(false);
@@ -172,6 +170,7 @@ public class Menu extends javax.swing.JFrame {
     jToolBar1.add(btReadme);
 
     btAbout.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/about.png"))); // NOI18N
     btAbout.setText("Sobre");
     btAbout.setBorder(null);
     btAbout.setFocusable(false);
@@ -183,6 +182,7 @@ public class Menu extends javax.swing.JFrame {
     jToolBar1.add(btAbout);
 
     btExit.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+    btExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/sair.png"))); // NOI18N
     btExit.setText("Sair");
     btExit.setBorder(null);
     btExit.setFocusable(false);
