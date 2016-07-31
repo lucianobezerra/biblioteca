@@ -15,8 +15,6 @@ import util.Message;
 
 public class FramePublisher extends javax.swing.JDialog {
 
-  Publisher publisher = null;
-
   DefaultTableModel model;
 
   public FramePublisher(java.awt.Frame parent, boolean modal) {
@@ -390,7 +388,7 @@ public class FramePublisher extends javax.swing.JDialog {
   }
 
   private void preencheForm(String id) {
-    publisher = Publisher.findById(Integer.parseInt(id));
+    Publisher publisher = Publisher.findById(Integer.parseInt(id));
     if (publisher != null) {
       lblCodigo.setText(String.format("%03d", publisher.getId()));
       txtNome.setText(publisher.getString("name"));
@@ -410,9 +408,11 @@ public class FramePublisher extends javax.swing.JDialog {
   }
 
   private void preparaSalvar(String id, String name, String email, boolean active) {
-    try{
+      Publisher publisher = new Publisher();
+      try{
       Integer user = LoggedUser.getInstance().getId();
       publisher.set("id", id, "name", name, "email", email, "active", active, "user_id", user);
+        
       if(publisher.saveIt()){
         trataComponentes("preparaSalvar");
         lblCodigo.setText(String.format("%04d", publisher.getInteger("id")));
@@ -430,7 +430,7 @@ public class FramePublisher extends javax.swing.JDialog {
   }
 
   private void preparaExcluir(String id) {
-    publisher = Publisher.findById(Integer.valueOf(id));
+    Publisher publisher = Publisher.findById(Integer.valueOf(id));
     try{
       publisher.delete();
       trataComponentes("preparaExcluir");

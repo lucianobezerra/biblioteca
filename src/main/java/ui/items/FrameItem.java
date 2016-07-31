@@ -42,375 +42,385 @@ public class FrameItem extends javax.swing.JDialog {
   }
 
   @SuppressWarnings("unchecked")
-  // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-  private void initComponents() {
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
 
-    bgOrdem = new javax.swing.ButtonGroup();
-    jTabbedPane1 = new javax.swing.JTabbedPane();
-    jPanel1 = new javax.swing.JPanel();
-    jPanel2 = new javax.swing.JPanel();
-    txtPesquisa = new javax.swing.JTextField();
-    checkSomenteAtivo = new javax.swing.JCheckBox();
-    btPesquisar = new javax.swing.JButton();
-    panelGridItem = new javax.swing.JScrollPane();
-    gridItem = new javax.swing.JTable();
-    jPanel3 = new javax.swing.JPanel();
-    rbCodigo = new javax.swing.JRadioButton();
-    rbNome = new javax.swing.JRadioButton();
-    jRadioButton1 = new javax.swing.JRadioButton();
-    jPanel4 = new javax.swing.JPanel();
-    jLabel1 = new javax.swing.JLabel();
-    jLabel2 = new javax.swing.JLabel();
-    lblCodigo = new javax.swing.JLabel();
-    checkActive = new javax.swing.JCheckBox();
-    btNovo = new javax.swing.JButton();
-    btAlterar = new javax.swing.JButton();
-    btSalvar = new javax.swing.JButton();
-    btCancelar = new javax.swing.JButton();
-    btExcluir = new javax.swing.JButton();
-    btSair = new javax.swing.JButton();
-    jLabel3 = new javax.swing.JLabel();
-    jLabel4 = new javax.swing.JLabel();
-    txtSubTitle = new javax.swing.JTextField();
-    txtTitle = new javax.swing.JTextField();
-    txtISBN = new javax.swing.JTextField();
-    jLabel7 = new javax.swing.JLabel();
-    txtPages = new javax.swing.JTextField();
-    jLabel8 = new javax.swing.JLabel();
-    jLabel9 = new javax.swing.JLabel();
-    jLabel10 = new javax.swing.JLabel();
-    cbCategory = new javax.swing.JComboBox();
-    jLabel5 = new javax.swing.JLabel();
-    txtExisting = new javax.swing.JTextField();
-    txtAuthor = new javax.swing.JTextField();
-    txtPublisher = new javax.swing.JTextField();
-    btFindAuthor = new javax.swing.JButton();
-    btFindPublisher = new javax.swing.JButton();
-    lblAuthor = new javax.swing.JLabel();
-    lblPublisher = new javax.swing.JLabel();
-    btFindISBN = new javax.swing.JButton();
-    jLabel6 = new javax.swing.JLabel();
-    lblAvailable = new javax.swing.JLabel();
+        bgOrdem = new javax.swing.ButtonGroup();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        txtPesquisa = new javax.swing.JTextField();
+        checkSomenteAtivo = new javax.swing.JCheckBox();
+        btPesquisar = new javax.swing.JButton();
+        panelGridItem = new javax.swing.JScrollPane();
+        gridItem = new javax.swing.JTable();
+        jPanel3 = new javax.swing.JPanel();
+        rbCodigo = new javax.swing.JRadioButton();
+        rbNome = new javax.swing.JRadioButton();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        lblCodigo = new javax.swing.JLabel();
+        checkActive = new javax.swing.JCheckBox();
+        btNovo = new javax.swing.JButton();
+        btAlterar = new javax.swing.JButton();
+        btSalvar = new javax.swing.JButton();
+        btCancelar = new javax.swing.JButton();
+        btExcluir = new javax.swing.JButton();
+        btSair = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        txtSubTitle = new javax.swing.JTextField();
+        txtTitle = new javax.swing.JTextField();
+        txtISBN = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        txtPages = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        cbCategory = new javax.swing.JComboBox();
+        jLabel5 = new javax.swing.JLabel();
+        txtExisting = new javax.swing.JTextField();
+        txtAuthor = new javax.swing.JTextField();
+        txtPublisher = new javax.swing.JTextField();
+        btFindAuthor = new javax.swing.JButton();
+        btFindPublisher = new javax.swing.JButton();
+        lblAuthor = new javax.swing.JLabel();
+        lblPublisher = new javax.swing.JLabel();
+        btFindISBN = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        lblAvailable = new javax.swing.JLabel();
 
-    setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-    setTitle("Cadastro de Itens");
-    setResizable(false);
-    getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Cadastro de Itens");
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-    jTabbedPane1.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+        jTabbedPane1.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
 
-    jPanel1.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
-    jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-    jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Pesquisa", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Monospaced", 0, 12))); // NOI18N
-    jPanel2.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
-    jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Pesquisa", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Monospaced", 0, 12))); // NOI18N
+        jPanel2.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-    txtPesquisa.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    txtPesquisa.addKeyListener(new java.awt.event.KeyAdapter() {
-      public void keyPressed(java.awt.event.KeyEvent evt) {
-        txtPesquisaKeyPressed(evt);
-      }
-    });
-    jPanel2.add(txtPesquisa, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 16, 440, 28));
+        txtPesquisa.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        txtPesquisa.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtPesquisaKeyPressed(evt);
+            }
+        });
+        jPanel2.add(txtPesquisa, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 16, 440, 28));
 
-    checkSomenteAtivo.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    checkSomenteAtivo.setText(" Ativo");
-    checkSomenteAtivo.setContentAreaFilled(false);
-    checkSomenteAtivo.setIconTextGap(1);
-    jPanel2.add(checkSomenteAtivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 16, 80, 28));
+        checkSomenteAtivo.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        checkSomenteAtivo.setText(" Ativo");
+        checkSomenteAtivo.setContentAreaFilled(false);
+        checkSomenteAtivo.setIconTextGap(1);
+        jPanel2.add(checkSomenteAtivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 16, 80, 28));
 
-    btPesquisar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    btPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif"))); // NOI18N
-    btPesquisar.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        btPesquisarActionPerformed(evt);
-      }
-    });
-    jPanel2.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 16, 40, 28));
+        btPesquisar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        btPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif"))); // NOI18N
+        btPesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btPesquisarActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 16, 40, 28));
 
-    jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 225, 640, 50));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 225, 640, 50));
 
-    panelGridItem.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+        panelGridItem.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
 
-    gridItem.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
-    gridItem.setModel(new javax.swing.table.DefaultTableModel(
-      new Object [][] {
-        {null, null, null, null, null}
-      },
-      new String [] {
-        "Cód:", "Título:", "Autor", "Saldo:", "Status:"
-      }
-    ) {
-      Class[] types = new Class [] {
-        java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
-      };
-      boolean[] canEdit = new boolean [] {
-        false, false, false, false, false
-      };
+        gridItem.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+        gridItem.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Cód:", "Título:", "Autor", "Saldo:", "Status:"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
 
-      public Class getColumnClass(int columnIndex) {
-        return types [columnIndex];
-      }
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
 
-      public boolean isCellEditable(int rowIndex, int columnIndex) {
-        return canEdit [columnIndex];
-      }
-    });
-    gridItem.addMouseListener(new java.awt.event.MouseAdapter() {
-      public void mouseClicked(java.awt.event.MouseEvent evt) {
-        gridItemMouseClicked(evt);
-      }
-    });
-    panelGridItem.setViewportView(gridItem);
-    gridItem.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-    if (gridItem.getColumnModel().getColumnCount() > 0) {
-      gridItem.getColumnModel().getColumn(0).setResizable(false);
-      gridItem.getColumnModel().getColumn(0).setPreferredWidth(60);
-      gridItem.getColumnModel().getColumn(1).setResizable(false);
-      gridItem.getColumnModel().getColumn(1).setPreferredWidth(300);
-      gridItem.getColumnModel().getColumn(2).setResizable(false);
-      gridItem.getColumnModel().getColumn(2).setPreferredWidth(200);
-      gridItem.getColumnModel().getColumn(3).setResizable(false);
-      gridItem.getColumnModel().getColumn(4).setResizable(false);
-    }
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        gridItem.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                gridItemMouseClicked(evt);
+            }
+        });
+        panelGridItem.setViewportView(gridItem);
+        gridItem.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        if (gridItem.getColumnModel().getColumnCount() > 0) {
+            gridItem.getColumnModel().getColumn(0).setResizable(false);
+            gridItem.getColumnModel().getColumn(0).setPreferredWidth(60);
+            gridItem.getColumnModel().getColumn(1).setResizable(false);
+            gridItem.getColumnModel().getColumn(1).setPreferredWidth(300);
+            gridItem.getColumnModel().getColumn(2).setResizable(false);
+            gridItem.getColumnModel().getColumn(2).setPreferredWidth(200);
+            gridItem.getColumnModel().getColumn(3).setResizable(false);
+            gridItem.getColumnModel().getColumn(4).setResizable(false);
+        }
 
-    jPanel1.add(panelGridItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 225));
+        jPanel1.add(panelGridItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 225));
 
-    jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ordem", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Monospaced", 0, 12))); // NOI18N
-    jPanel3.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
-    jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ordem", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Monospaced", 0, 12))); // NOI18N
+        jPanel3.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-    bgOrdem.add(rbCodigo);
-    rbCodigo.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    rbCodigo.setSelected(true);
-    rbCodigo.setText("Código");
-    rbCodigo.setActionCommand("id");
-    jPanel3.add(rbCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 120, -1));
+        bgOrdem.add(rbCodigo);
+        rbCodigo.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        rbCodigo.setText("Código");
+        rbCodigo.setActionCommand("id");
+        jPanel3.add(rbCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 100, -1));
 
-    bgOrdem.add(rbNome);
-    rbNome.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    rbNome.setText("Título");
-    rbNome.setActionCommand("title");
-    jPanel3.add(rbNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 20, 120, -1));
+        bgOrdem.add(rbNome);
+        rbNome.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        rbNome.setText("Título");
+        rbNome.setActionCommand("title");
+        jPanel3.add(rbNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 20, 100, -1));
 
-    bgOrdem.add(jRadioButton1);
-    jRadioButton1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jRadioButton1.setText("Autor");
-    jRadioButton1.setActionCommand("autor_id");
-    jPanel3.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 20, 120, -1));
+        bgOrdem.add(jRadioButton1);
+        jRadioButton1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jRadioButton1.setText("Autor");
+        jRadioButton1.setActionCommand("author_id");
+        jPanel3.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, 100, -1));
 
-    jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 275, 640, 50));
+        bgOrdem.add(jRadioButton2);
+        jRadioButton2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jRadioButton2.setSelected(true);
+        jRadioButton2.setText("Data");
+        jRadioButton2.setActionCommand("created_at");
+        jPanel3.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 100, -1));
 
-    jTabbedPane1.addTab("Listagem", jPanel1);
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 275, 640, 50));
 
-    jPanel4.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
-    jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jTabbedPane1.addTab("Listagem", jPanel1);
 
-    jLabel1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-    jLabel1.setText("Cód:");
-    jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 15, 80, 22));
+        jPanel4.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-    jLabel2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-    jLabel2.setText("ISBN:");
-    jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 80, 22));
+        jLabel1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setText("Cód:");
+        jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 15, 80, 22));
 
-    lblCodigo.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    lblCodigo.setText(" ");
-    jPanel4.add(lblCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 15, 40, 22));
+        jLabel2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel2.setText("ISBN:");
+        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 80, 22));
 
-    checkActive.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    checkActive.setText("Ativo");
-    checkActive.setEnabled(false);
-    jPanel4.add(checkActive, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 225, 70, 28));
+        lblCodigo.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        lblCodigo.setText(" ");
+        jPanel4.add(lblCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 15, 40, 22));
 
-    btNovo.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    btNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/new.png"))); // NOI18N
-    btNovo.setText("Novo");
-    btNovo.setToolTipText("Novo Registro");
-    btNovo.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        btNovoActionPerformed(evt);
-      }
-    });
-    jPanel4.add(btNovo, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 288, 100, 30));
+        checkActive.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        checkActive.setText("Ativo");
+        checkActive.setEnabled(false);
+        jPanel4.add(checkActive, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 225, 70, 28));
 
-    btAlterar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    btAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/edit.png"))); // NOI18N
-    btAlterar.setText("Alterar");
-    btAlterar.setToolTipText("Alterar Registro");
-    btAlterar.setEnabled(false);
-    btAlterar.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        btAlterarActionPerformed(evt);
-      }
-    });
-    jPanel4.add(btAlterar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 288, 100, 30));
+        btNovo.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        btNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/new.png"))); // NOI18N
+        btNovo.setText("Novo");
+        btNovo.setToolTipText("Novo Registro");
+        btNovo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btNovoActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btNovo, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 288, 100, 30));
 
-    btSalvar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    btSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save.png"))); // NOI18N
-    btSalvar.setText("Salvar");
-    btSalvar.setToolTipText("Salvar Registro");
-    btSalvar.setEnabled(false);
-    btSalvar.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        btSalvarActionPerformed(evt);
-      }
-    });
-    jPanel4.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(215, 288, 100, 30));
+        btAlterar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        btAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/edit.png"))); // NOI18N
+        btAlterar.setText("Alterar");
+        btAlterar.setToolTipText("Alterar Registro");
+        btAlterar.setEnabled(false);
+        btAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btAlterarActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btAlterar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 288, 100, 30));
 
-    btCancelar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cancelar.png"))); // NOI18N
-    btCancelar.setText("Cancelar");
-    btCancelar.setToolTipText("Cancelar Edição");
-    btCancelar.setEnabled(false);
-    btCancelar.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        btCancelarActionPerformed(evt);
-      }
-    });
-    jPanel4.add(btCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 288, 100, 30));
+        btSalvar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        btSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save.png"))); // NOI18N
+        btSalvar.setText("Salvar");
+        btSalvar.setToolTipText("Salvar Registro");
+        btSalvar.setEnabled(false);
+        btSalvar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btSalvarActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(215, 288, 100, 30));
 
-    btExcluir.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    btExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/delete.png"))); // NOI18N
-    btExcluir.setText("Excluir");
-    btExcluir.setToolTipText("Excluir Registro");
-    btExcluir.setEnabled(false);
-    btExcluir.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        btExcluirActionPerformed(evt);
-      }
-    });
-    jPanel4.add(btExcluir, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 288, 100, 30));
+        btCancelar.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cancelar.png"))); // NOI18N
+        btCancelar.setText("Cancelar");
+        btCancelar.setToolTipText("Cancelar Edição");
+        btCancelar.setEnabled(false);
+        btCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btCancelarActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 288, 100, 30));
 
-    btSair.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    btSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/sair.png"))); // NOI18N
-    btSair.setText("Sair");
-    btSair.setToolTipText("Sair");
-    btSair.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        btSairActionPerformed(evt);
-      }
-    });
-    jPanel4.add(btSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 288, 100, 30));
+        btExcluir.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        btExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/delete.png"))); // NOI18N
+        btExcluir.setText("Excluir");
+        btExcluir.setToolTipText("Excluir Registro");
+        btExcluir.setEnabled(false);
+        btExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btExcluirActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btExcluir, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 288, 100, 30));
 
-    jLabel3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-    jLabel3.setText("Título:");
-    jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 85, 80, 22));
+        btSair.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        btSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/sair.png"))); // NOI18N
+        btSair.setText("Sair");
+        btSair.setToolTipText("Sair");
+        btSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btSairActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 288, 100, 30));
 
-    jLabel4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-    jLabel4.setText("SubTítulo:");
-    jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 80, 22));
+        jLabel3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel3.setText("Título:");
+        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 85, 80, 22));
 
-    txtSubTitle.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    txtSubTitle.setEnabled(false);
-    jPanel4.add(txtSubTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 450, 28));
+        jLabel4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel4.setText("SubTítulo:");
+        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 80, 22));
 
-    txtTitle.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    txtTitle.setEnabled(false);
-    jPanel4.add(txtTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 85, 450, 28));
+        txtSubTitle.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        txtSubTitle.setEnabled(false);
+        jPanel4.add(txtSubTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 450, 28));
 
-    txtISBN.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    txtISBN.setEnabled(false);
-    jPanel4.add(txtISBN, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 180, 28));
+        txtTitle.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        txtTitle.setEnabled(false);
+        jPanel4.add(txtTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 85, 450, 28));
 
-    jLabel7.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-    jLabel7.setText("Páginas:");
-    jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 225, 80, 28));
+        txtISBN.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        txtISBN.setEnabled(false);
+        jPanel4.add(txtISBN, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 180, 28));
 
-    txtPages.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    txtPages.setEnabled(false);
-    jPanel4.add(txtPages, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 225, 60, 28));
+        jLabel7.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel7.setText("Páginas:");
+        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 225, 80, 28));
 
-    jLabel8.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-    jLabel8.setText("Autor:");
-    jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 155, 80, 28));
+        txtPages.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        txtPages.setEnabled(false);
+        jPanel4.add(txtPages, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 225, 60, 28));
 
-    jLabel9.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-    jLabel9.setText("Editora:");
-    jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 80, 28));
+        jLabel8.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel8.setText("Autor:");
+        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 155, 80, 28));
 
-    jLabel10.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jLabel10.setText("Tipo:");
-    jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, 40, 22));
+        jLabel9.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel9.setText("Editora:");
+        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 80, 28));
 
-    cbCategory.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    cbCategory.setEnabled(false);
-    jPanel4.add(cbCategory, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 50, 180, 28));
+        jLabel10.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jLabel10.setText("Tipo:");
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, 40, 22));
 
-    jLabel5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jLabel5.setText("Exemplares:");
-    jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 225, -1, 28));
+        cbCategory.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        cbCategory.setEnabled(false);
+        jPanel4.add(cbCategory, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 50, 180, 28));
 
-    txtExisting.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    txtExisting.setEnabled(false);
-    jPanel4.add(txtExisting, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 225, 60, 28));
+        jLabel5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jLabel5.setText("Exemplares:");
+        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 225, -1, 28));
 
-    txtAuthor.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    txtAuthor.setEnabled(false);
-    jPanel4.add(txtAuthor, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 155, 60, 28));
+        txtExisting.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        txtExisting.setEnabled(false);
+        jPanel4.add(txtExisting, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 225, 60, 28));
 
-    txtPublisher.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    txtPublisher.setEnabled(false);
-    jPanel4.add(txtPublisher, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 60, 28));
+        txtAuthor.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        txtAuthor.setEnabled(false);
+        jPanel4.add(txtAuthor, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 155, 60, 28));
 
-    btFindAuthor.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    btFindAuthor.setEnabled(false);
-    btFindAuthor.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        btFindAuthorActionPerformed(evt);
-      }
-    });
-    jPanel4.add(btFindAuthor, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 155, 30, 28));
+        txtPublisher.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        txtPublisher.setEnabled(false);
+        jPanel4.add(txtPublisher, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 60, 28));
 
-    btFindPublisher.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    btFindPublisher.setToolTipText("Pesquisar");
-    btFindPublisher.setEnabled(false);
-    btFindPublisher.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        btFindPublisherActionPerformed(evt);
-      }
-    });
-    jPanel4.add(btFindPublisher, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 30, 28));
+        btFindAuthor.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        btFindAuthor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif"))); // NOI18N
+        btFindAuthor.setEnabled(false);
+        btFindAuthor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btFindAuthorActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btFindAuthor, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 155, 30, 28));
 
-    lblAuthor.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jPanel4.add(lblAuthor, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 155, 340, 28));
+        btFindPublisher.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        btFindPublisher.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif"))); // NOI18N
+        btFindPublisher.setToolTipText("Pesquisar");
+        btFindPublisher.setEnabled(false);
+        btFindPublisher.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btFindPublisherActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btFindPublisher, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 30, 28));
 
-    lblPublisher.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jPanel4.add(lblPublisher, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, 340, 28));
+        lblAuthor.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jPanel4.add(lblAuthor, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 155, 340, 28));
 
-    btFindISBN.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    btFindISBN.setEnabled(false);
-    btFindISBN.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        btFindISBNActionPerformed(evt);
-      }
-    });
-    jPanel4.add(btFindISBN, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, -1, 30));
+        lblPublisher.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jPanel4.add(lblPublisher, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, 340, 28));
 
-    jLabel6.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-    jLabel6.setText("Saldo:");
-    jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 225, 50, 28));
+        btFindISBN.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        btFindISBN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif"))); // NOI18N
+        btFindISBN.setEnabled(false);
+        btFindISBN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btFindISBNActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btFindISBN, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, -1, 30));
 
-    lblAvailable.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-    lblAvailable.setText(" ");
-    jPanel4.add(lblAvailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 225, 30, 28));
+        jLabel6.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel6.setText("Saldo:");
+        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 225, 50, 28));
 
-    jTabbedPane1.addTab("Cadastro", jPanel4);
+        lblAvailable.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        lblAvailable.setText(" ");
+        jPanel4.add(lblAvailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 225, 30, 28));
 
-    getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 360));
+        jTabbedPane1.addTab("Cadastro", jPanel4);
 
-    setSize(new java.awt.Dimension(659, 390));
-    setLocationRelativeTo(null);
-  }// </editor-fold>//GEN-END:initComponents
+        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 360));
+
+        setSize(new java.awt.Dimension(659, 390));
+        setLocationRelativeTo(null);
+    }// </editor-fold>//GEN-END:initComponents
 
   private void btPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPesquisarActionPerformed
     preencheGrid(txtPesquisa.getText().toUpperCase(), checkSomenteAtivo.isSelected(), bgOrdem.getSelection().getActionCommand());
@@ -510,54 +520,55 @@ public class FrameItem extends javax.swing.JDialog {
   public void setNamePublisher(String name) {
     this.lblPublisher.setText(name);
   }
-  // Variables declaration - do not modify//GEN-BEGIN:variables
-  private javax.swing.ButtonGroup bgOrdem;
-  private javax.swing.JButton btAlterar;
-  private javax.swing.JButton btCancelar;
-  private javax.swing.JButton btExcluir;
-  private javax.swing.JButton btFindAuthor;
-  private javax.swing.JButton btFindISBN;
-  private javax.swing.JButton btFindPublisher;
-  private javax.swing.JButton btNovo;
-  private javax.swing.JButton btPesquisar;
-  private javax.swing.JButton btSair;
-  private javax.swing.JButton btSalvar;
-  private javax.swing.JComboBox cbCategory;
-  private javax.swing.JCheckBox checkActive;
-  private javax.swing.JCheckBox checkSomenteAtivo;
-  private javax.swing.JTable gridItem;
-  private javax.swing.JLabel jLabel1;
-  private javax.swing.JLabel jLabel10;
-  private javax.swing.JLabel jLabel2;
-  private javax.swing.JLabel jLabel3;
-  private javax.swing.JLabel jLabel4;
-  private javax.swing.JLabel jLabel5;
-  private javax.swing.JLabel jLabel6;
-  private javax.swing.JLabel jLabel7;
-  private javax.swing.JLabel jLabel8;
-  private javax.swing.JLabel jLabel9;
-  private javax.swing.JPanel jPanel1;
-  private javax.swing.JPanel jPanel2;
-  private javax.swing.JPanel jPanel3;
-  private javax.swing.JPanel jPanel4;
-  private javax.swing.JRadioButton jRadioButton1;
-  private javax.swing.JTabbedPane jTabbedPane1;
-  private javax.swing.JLabel lblAuthor;
-  private javax.swing.JLabel lblAvailable;
-  private javax.swing.JLabel lblCodigo;
-  private javax.swing.JLabel lblPublisher;
-  private javax.swing.JScrollPane panelGridItem;
-  private javax.swing.JRadioButton rbCodigo;
-  private javax.swing.JRadioButton rbNome;
-  private javax.swing.JTextField txtAuthor;
-  private javax.swing.JTextField txtExisting;
-  private javax.swing.JTextField txtISBN;
-  private javax.swing.JTextField txtPages;
-  private javax.swing.JTextField txtPesquisa;
-  private javax.swing.JTextField txtPublisher;
-  private javax.swing.JTextField txtSubTitle;
-  private javax.swing.JTextField txtTitle;
-  // End of variables declaration//GEN-END:variables
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup bgOrdem;
+    private javax.swing.JButton btAlterar;
+    private javax.swing.JButton btCancelar;
+    private javax.swing.JButton btExcluir;
+    private javax.swing.JButton btFindAuthor;
+    private javax.swing.JButton btFindISBN;
+    private javax.swing.JButton btFindPublisher;
+    private javax.swing.JButton btNovo;
+    private javax.swing.JButton btPesquisar;
+    private javax.swing.JButton btSair;
+    private javax.swing.JButton btSalvar;
+    private javax.swing.JComboBox cbCategory;
+    private javax.swing.JCheckBox checkActive;
+    private javax.swing.JCheckBox checkSomenteAtivo;
+    private javax.swing.JTable gridItem;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JLabel lblAuthor;
+    private javax.swing.JLabel lblAvailable;
+    private javax.swing.JLabel lblCodigo;
+    private javax.swing.JLabel lblPublisher;
+    private javax.swing.JScrollPane panelGridItem;
+    private javax.swing.JRadioButton rbCodigo;
+    private javax.swing.JRadioButton rbNome;
+    private javax.swing.JTextField txtAuthor;
+    private javax.swing.JTextField txtExisting;
+    private javax.swing.JTextField txtISBN;
+    private javax.swing.JTextField txtPages;
+    private javax.swing.JTextField txtPesquisa;
+    private javax.swing.JTextField txtPublisher;
+    private javax.swing.JTextField txtSubTitle;
+    private javax.swing.JTextField txtTitle;
+    // End of variables declaration//GEN-END:variables
 
   private void preencheGrid(String title, boolean onlyActive, String ordem) {
     Funcoes.removeLinha(model);
@@ -579,7 +590,7 @@ public class FrameItem extends javax.swing.JDialog {
       Author     author   = item.parent(Author.class);
       Publisher publisher = item.parent(Publisher.class);
       fillComboCategory();
-      lblCodigo.setText(String.format("%03d", item.getId()));
+      lblCodigo.setText(String.format("%04d", item.getId()));
       txtISBN.setText(item.getString("isbn"));
       cbCategory.setSelectedItem(category.getString("description"));
       txtTitle.setText(item.getString("title"));
@@ -723,7 +734,7 @@ public class FrameItem extends javax.swing.JDialog {
       if(item.saveIt()){
         trataComponentes("preparaSalvar");
         lblCodigo.setText(String.format("%04d", item.getInteger("id")));
-        JOptionPane.showMessageDialog(this, "Categoria Gravada com Sucesso!");
+        JOptionPane.showMessageDialog(this, "Item Gravado com Sucesso!");
       }
     }catch(ValidationException e){
       Message.validation(this, item.errors());
@@ -787,16 +798,4 @@ public class FrameItem extends javax.swing.JDialog {
     return result;
   }
 
-  private void setIcons() {
-    btPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif")));
-    btFindPublisher.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif")));
-    btFindISBN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif")));
-    btFindAuthor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/filtrar.gif")));
-    btNovo.setIcon(     new javax.swing.ImageIcon(getClass().getResource("/images/new.png")));
-    btAlterar.setIcon(  new javax.swing.ImageIcon(getClass().getResource("/images/edit.png")));
-    btSalvar.setIcon(   new javax.swing.ImageIcon(getClass().getResource("/images/save.png")));
-    btCancelar.setIcon( new javax.swing.ImageIcon(getClass().getResource("/images/cancelar.png")));
-    btExcluir.setIcon(  new javax.swing.ImageIcon(getClass().getResource("/images/delete.png")));
-    btSair.setIcon(     new javax.swing.ImageIcon(getClass().getResource("/images/exit.png")));
-  }
 }

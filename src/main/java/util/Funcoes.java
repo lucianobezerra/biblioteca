@@ -21,12 +21,12 @@ import org.joda.time.*;
  * @author luciano
  */
 public class Funcoes {
-  
-  public static void formatFontGrid(JTable grid, Font font){
+
+  public static void formatFontGrid(JTable grid, Font font) {
     grid.setFont(font);
   }
-  
-  public static void formatFontHeader(JTable grid, Font font){
+
+  public static void formatFontHeader(JTable grid, Font font) {
     grid.getTableHeader().setFont(font);
   }
 
@@ -179,6 +179,7 @@ public class Funcoes {
 
   /**
    * Transforma uma data no Formato aaaa-mm-dd para dd/mm/aaaa
+   *
    * @param data formato aaaa-mm-dd
    * @return String no formato dd/mm/aaaa
    */
@@ -186,10 +187,36 @@ public class Funcoes {
     String dataFormatada = new SimpleDateFormat("dd/MM/yyyy").format(data);
     return dataFormatada;
   }
-  
-  public static int difData(Date dataPrevista){
+
+  public static int difData(Date dataPrevista) {
     DateTime data = new DateTime(dataPrevista);
     DateTime hoje = new DateTime();
     return Days.daysBetween(data, hoje).getDays();
   }
+
+  public static String preencheCom(String linha_a_preencher, String letra, int tamanho, int direcao) {
+    if (linha_a_preencher == null || linha_a_preencher.trim() == "") {
+      linha_a_preencher = "";
+    }
+    while (linha_a_preencher.contains(" ")) {
+      linha_a_preencher = linha_a_preencher.replaceAll(" ", " ").trim();
+    }
+
+    linha_a_preencher = linha_a_preencher.replaceAll("[./-]", "");
+    StringBuffer sb = new StringBuffer(linha_a_preencher);
+    if (direcao == 1) { //a Esquerda
+      for (int i = sb.length(); i < tamanho; i++) {
+        sb.insert(0, letra);
+      }
+
+    } else if (direcao == 2) {//a Direita
+      for (int i = sb.length(); i < tamanho; i++) {
+        sb.append(letra);
+      }
+    }
+
+    return sb.toString();
+
+  }
+
 }
